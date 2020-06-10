@@ -30,9 +30,12 @@ Our group undertook an exercise of analyzing COVID-19 data as it pertains to all
 <br>
 We extracted data from the following sources for our analysis:
 <br>
+<br>
 https://www.kaggle.com/imdevskp/corona-virus-report
 <br>
+<br>
 This data source had data related to actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
+<br>
 <br>
 http://www.healthdata.org/covid/data-downloads
 <br>
@@ -58,15 +61,22 @@ We then used Flask to create API routes in a file called application.py. This fi
 ## Creation of an HTML file:
 We then created an HTML file called index.html. This file contains the structure for the webpage. It also has teh relevant reference to all the underlying files that ar eused to format / style the webpage as well as dynamically create visualizations on the webpage.
 
-## Creation of Javascript file:
+## Creation of a Javascript file:
 We then created a Javascript file called plots.js. This file contains all the logic that controls the dynamic interactions with the visualizations on the webpage.  
 
+# Push to AWS:
+We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". 
+<br>
+This is the URL for our webpage.
+<br>
+http://20200610v1-env.eba-3ip3pqzu.us-east-2.elasticbeanstalk.com/
+<hr>
 ## Attached below is a screenshot of the Top Half of our webpage. 
 ![](images/Website_Top_Half.PNG)
-
+<hr>
 ## Attached below is a screenshot of the Bottom Half of our webpage. 
 ![](images/Website_Bottom_Half.PNG)
-
+<hr>
 
 
 
