@@ -72,9 +72,11 @@ This is the URL for our webpage.
 <br>
 http://20200610v1-env.eba-3ip3pqzu.us-east-2.elasticbeanstalk.com/
 <hr>
+
 ## Attached below is a screenshot of the Top Half of our webpage. 
 ![](images/Website_Top_Half.PNG)
 <hr>
+
 ## Attached below is a screenshot of the Bottom Half of our webpage. 
 ![](images/Website_Bottom_Half.PNG)
 <hr>
