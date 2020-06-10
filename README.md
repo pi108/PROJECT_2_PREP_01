@@ -56,16 +56,16 @@ We then loaded the data into a SQLite database and called it covidData.db.
 We used SQL Alchemy to create functions in a python file called covidData.py. These functions allow us to extract the relevant data from the SQLite Database.
 
 ## Creation of a Python File with API routes:
-We then used Flask to create API routes in a file called application.py. This file uses the functiosn created in the file called covidData.py. 
+We then used Flask to create API routes in a file called application.py. This file uses the functions created in the file called covidData.py. 
 
 ## Creation of an HTML file:
-We then created an HTML file called index.html. This file contains the structure for the webpage. It also has teh relevant reference to all the underlying files that ar eused to format / style the webpage as well as dynamically create visualizations on the webpage.
+We then created an HTML file called index.html. This file contains the structure for the webpage. It also has all the relevant references / links to the underlying files that are used to format / style the webpage, as well as dynamically create the charts / graphs on the webpage.
 
 ## Creation of a Javascript file:
-We then created a Javascript file called plots.js. This file contains all the logic that controls the dynamic interactions with the visualizations on the webpage.  
+We then created a Javascript file called plots.js. This file contains all the logic that controls the dynamic interaction of a user with the webpage. This logic allows for dynamic updates to the charts / graphs based on the user's selection of a particular US state.
 
 # Push to AWS:
-We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". 
+We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". This environment then provided us a URL for our webpage.
 <br>
 This is the URL for our webpage.
 <br>
@@ -80,50 +80,8 @@ http://20200610v1-env.eba-3ip3pqzu.us-east-2.elasticbeanstalk.com/
 
 
 
-![erd](ER_Diagram.png)
 
-### Loading Data into Tables in the Database:
-* We used a jupyter notebook to load data into the 3 tables in the database as follows:
-* We loaded data from Data Frame # 1 into the table called “combined_macro_eonomic_indicators_table_daily”.
-* We loaded data from Data Frame # 2 into the table called “aggregated_macro_economic_indicators_table_monthly”.
-* We loaded data from Data Frame # 3 into the table called “combined_big_mac_table”.
-* We ran select statements from each of the 3 tables inside the PostgreSQL database and verified that all the data is in the 3 tables.
 
-*Please click on images to see full resolution table*
+# Conclusions:
 
-#### TABLE 1: combined_big_mac_table
-<img src="/images/select_big_mac.png" 
-     alt="Big Mac Table" width="500" /> 
 
-#### TABLE 2: combined_macro_economic_indicators_table_daily
-
-<img src="/images/select_dailypng.png" 
-     alt="Daily Table" width="500" />
-
-#### TABLE 3: aggregated_macro_economic_indicators_table_monthly
-
-<img src="/images/select_monthly.png" 
-     alt="Monthly Table" width="500" />
-
-### Sample Query
-We also extracted the actual Indian Rupee to USD exchange rate, and the implied Indian Rupee to USD exchange rate, by running a join statement joining the following tables:
-* aggregated_macro_economic_indicators_table_monthly (which contains data from the FRED website).
-* combined_big_mac_table (which contains data from the Economist magazine website).
-
-<!-- <img src="/images/target_analysis.png" 
-     alt="Query" width="600" /> -->
-![query](/images/target_analysis.png)
-
-## Justification for Selecting PostGreSQL over mongoDB
-Justification for why we chose PostGreSQL (relational) instead of MongoDB for our ETL Project:
-### Use Relational SQL Databases When:
-* ACID (Atomicity, Consistency, Isolation, Durability) principles are enforced. This reduces anomalies, enforces integrity and that is why this is preferred for commerce and financial applications.
-* Data structure is not changing. If you application design is solid and not expected to be changing with future requirements (at least not very often) then it is best to  proceed to use this type of construct and be confident in your data.
-### Use Non-Relational No-SQL Databases When:
-* Rapid Application Development is used. No-SQL database supporting rapidly changing designs and coding sprints and is perfect for more Agile settings, where requirements change often.
-*  Storing large amounts of data with little to no structure. Much like expressed in the previous point, if your data requirements are not clear, bu you know that you need to store lots of data somewhere and somehow, then you can use this database type, which you can morph on the fly to match the requirement.
-
-Based on the fact our data structure is not chaning and we want to enforce ACID principles we are confident using a relational database is a good choice for storing this data. 
-
-# Summary
-The above description demonstrates our team capability to successfully apply Extract, Tranform and Load (ETL).  
