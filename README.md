@@ -5,7 +5,7 @@
 * *Firdosh Patel*
 * *Ann McNamara*
 
-### This repository contains the files regarding an ETL (Extraction, Transformation and Load) exercise conducted by our group. This folder contains the following:
+### This repository contains the files regarding a Website Visualization exercise conducted by our group. This folder contains the following:
 1.	SQLite Database called "covidData.db".
 2.	Python file called "covidData.py" that contains user-created functions. 
 3.	Python file called "application.py" that cretaes api routes using the user-created functions.
@@ -17,8 +17,26 @@
 7.	A zip folder called "PROJECT_2_PREP_01.zip" which contains the above 6 files and folders, that was pushed to AWS. 
 8.	A folder called "images" thatr contains images of our Website.
 
-## Background
-This project applies ETL to the the concept of "burgernomics" as detailed in the Economist magazine . *"The big mac index was invented by The Economist in 1986 as a lighthearted guide to whether currencies are at their “correct” level. It is based on the theory of purchasing-power parity (PPP), the notion that in the long run exchange rates should move towards the rate that would equalise the prices of an identical basket of goods and services (in this case, a burger) in any two countries."*[(https://www.economist.com/news/2020/01/15/the-big-mac-index)]
+## Data Extraction
+This project is about a website visualtion exercise using COVID-19 data. 
+<br>
+As per wikipedia.org, Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China, and has resulted in a global pandemic. 
+https://en.wikipedia.org/wiki/Coronavirus_disease_2019
+<br>
+Our group undertook an exercise of analyzing COVID-19 data as it pertains to all the 50 states in the United States of America. We extracted data from the following sources for our analysis:
+<br>
+
+This data source had data related to actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
+<br>
+
+This data source had data related to the predicted number of new daily cases, new daily deaths, and total cumulative deaths for every state in the United States. 
+<br>
+
+
+## Data Transformation
+We did the following to transform the data:
+
+applies ETL to the the concept of "burgernomics" as detailed in the Economist magazine . *"The big mac index was invented by The Economist in 1986 as a lighthearted guide to whether currencies are at their “correct” level. It is based on the theory of purchasing-power parity (PPP), the notion that in the long run exchange rates should move towards the rate that would equalise the prices of an identical basket of goods and services (in this case, a burger) in any two countries."*[(https://www.economist.com/news/2020/01/15/the-big-mac-index)]
 
 <img src="/images/big_mac.jpg" 
      alt="Big Mac" width="500" />
