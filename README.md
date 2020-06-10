@@ -1,6 +1,6 @@
 # PROJECT # 2
-## Visualize me, Captain  
-### Team Members
+# Visualize me, Captain !!  
+## Team Members
 * *Swati Saxena*
 * *Firdosh Patel*
 * *Ann McNamara*
@@ -65,7 +65,7 @@ We then created an HTML file called index.html. This file contains the structure
 ## Creation of a Javascript file:
 We then created a Javascript file called plots.js. This file contains all the logic that controls the dynamic interaction of a user with the webpage. This logic allows for dynamic updates to the charts / graphs based on the user's selection of a particular US state.
 
-# Push to AWS:
+## Push to AWS:
 We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". This environment then provided us a URL for our webpage.
 <br>
 This is the URL for our webpage.
