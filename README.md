@@ -17,7 +17,7 @@
 7.	A zip folder called "PROJECT_2_PREP_01.zip" which contains the above 6 files and folders, that was pushed to AWS. 
 8.	A folder called "images" thatr contains images of our Website.
 
-## Data Extraction
+## Data Extraction:
 This project is about a website visualtion exercise using COVID-19 data. 
 <br>
 As per wikipedia.org:
@@ -26,84 +26,49 @@ https://en.wikipedia.org/wiki/Coronavirus_disease_2019
 <br>
 Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China, and has resulted in a global pandemic. 
 <br>
-Our group undertook an exercise of analyzing COVID-19 data as it pertains to all the 50 states in the United States of America. We extracted data from the following sources for our analysis:
+Our group undertook an exercise of analyzing COVID-19 data as it pertains to all the 50 states in the United States of America. 
+<br>
+We extracted data from the following sources for our analysis:
 <br>
 https://www.kaggle.com/imdevskp/corona-virus-report
+<br>
 This data source had data related to actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
 <br>
 http://www.healthdata.org/covid/data-downloads
+<br>
 This data source had data related to the predicted number of new daily cases, new daily deaths, and total cumulative deaths for every state in the United States. 
 <br>
 
-
-## Data Transformation
+## Data Transformation:
 We did the following to transform the data:
 1.	Addressed NULL values. 
 2.	Formatted the dates in a manner that would work with the flask library in python. 
 3.	"Rolled-up" / summarized the dataset with actual numbers fromt he original level of State/County/Date to the level of State/Date.
 4. Created a ranking for the states based on the Total Deaths Per Million of Population.
 
-<img src="/images/big_mac.jpg" 
-     alt="Big Mac" width="500" />
+## Data Load: 
+We then loaded the data into a SQLite database and called it covidData.db.
 
-### ETL
-![query](/images/etl.png)
+## Creation of a Python File with Functions:
+We used SQL Alchemy to create functions in a python file called covidData.py. These functions allow us to extract the relevant data from the SQLite Database.
 
-ETL stands for for Extract, Transform, and Load, three separate functions that are combined into one project to extract data out of one or more data sources and place it into another datas store or database. 
+## Creation of a Python File with API routes:
+We then used Flask to create API routes in a file called application.py. This file uses the functiosn created in the file called covidData.py. 
 
-* **Extract** is the process of extracting data from one or more source(s). In the extract stage, data is gathered, often from multiple and different types of data sources.  In this example data is collected from API calls and a CSV file. 
+## Creation of an HTML file:
+We then created an HTML file called index.html. This file contains the structure for the webpage. It also has teh relevant reference to all the underlying files that ar eused to format / style the webpage as well as dynamically create visualizations on the webpage.
 
-* **Transform** is the process of converting the data extracted during the extract phase into a cleaner or more convienient form that better meets the need of the application. Unnecessary data are removed, data are renamed, and data is transformed into a format compatible with the need. Transformation also includes combining the data with other data.
+## Creation of Javascript file:
+We then created a Javascript file called plots.js. This file contains all the logic that controls the dynamic interactions with the visualizations on the webpage.  
 
-* **Load** is the process of loading the data into the target database.
+## Attached below is a screenshot of the Top Half of our webpage. 
+![](images/Website_Top_Half.PNG)
 
-## Extraction:
+## Attached below is a screenshot of the Bottom Half of our webpage. 
+![](images/Website_Bottom_Half.PNG)
 
-We extracted data from two separate sources:
-### The Federal Reserve Economic Data (FRED) Website: (https://fred.stlouisfed.org/)
-<img src="/images/fred.png" 
-     alt="fred" width="100"
-     style="float: right; margin-right: 10px;" />
 
-We used Jupyter Notebook to extract data using an API. 
-* Four economic indicators related to the stock markets (Dow Jones Industrial Average, Nasdaq, S&P 500 and the Willshire 5000).
-* Four economic indicators related to the commodity markets (Brent Crude Oil, WTI Crude Oil, Henry Hub Natural Gas and Gold).
-* Four economic indicators related to the foreign currency exchange rate markets (Chinese Yuan to US Dollar, Indian Rupee to US Dollar, Japanese Yen to US Dollar, European Union Euro to US Dollar).
 
-### The Economist Magazine Website: (https://www.economist.com/news/2020/01/15/the-big-mac-index)
-<img src="/images/big_mac.png" 
-     alt="burgernomics" width="100"
-     style="float: right; margin-right: 10px;" />
-
-We extracted data from a CSV file.
-* The implied exchange rates calculated by the Economist based on the price of a McDonalds Big Mac in different countries across the world. We were interested in seeing how these “implied exchange rates” would compare to the actual exchange rates reported by the FRED website for the 4 exchange rates that we extracted. 
-
-## Transformation:
-We ran two Transformations:
-### Data extracted via the API:
-We used jupyter notebook to run the following transformations:
-* Dropped rows containing “N/A”, spaces or periods instead of actual values.
-* Renamed the columns to have intuitive names.
-* Created Data Frame # 1 which contains daily level data for all 12 economic indicators. This data frame will be loaded into its own table in a database.
-* Converted the Date column to a “Date Time Format”.
-* Calculated a monthly level average of the daily level data for all of the 12 economic indicators. The monthly level average was assigned a date corresponding to the end of the month.
-* Created Data Frame # 2 which contains monthly average level data for all 12 economic indicators. This data frame will be loaded into its own table in a database.
-### Data extracted via the CSV File:
-We used Jupyter notebook to run the following transformations:
-* Dropped the unrequired columns.
-* Dropped the unrequired rows within the column that contained the country name (countries that were not needed).
-* Cleaned up the inconsistency in the dates by ensuring that all dates followed a “month-end” date format.
-* Provided the ability to clean up the inconsistency in the dates by ensuring that all dates follow a “month-begin” date format (if needed in the future).
-* Renamed the columns to have intuitive names.
-* Created Data Frame # 3 which contains big mac data implied exchange rate from the economomist. This data frame will be loaded into its own table in a database.
-## Load:
-### We created a Database and the 3 Tables needed for our project:
-We chose to use PostgreSQL as a Database because the data we are working with is very structured and will always be in a consistent format.
-We created 3 tables as follows:
-1.  combined_macro_eonomic_indicators_table_daily.
-2.	aggregated_macro_economic_indicators_table_monthly.
-3.	combined_big_mac_table.
-Please note that we chose table names that are as descriptive as possible. When dealing with economic data, the level of granularity is so high, that many companies prefer table names to be as descriptive as possible to ensure that there is no ambiguity whatsoever regarding the data stored in a table. 
 
 ![erd](ER_Diagram.png)
 
