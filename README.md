@@ -32,9 +32,11 @@ Our group undertook an exercise of analyzing COVID-19 data as it pertains to all
 <br>
 We extracted data from the following sources for our analysis:
 <br>
+<br>
 https://www.kaggle.com/imdevskp/corona-virus-report
 <br>
 This data source had data related to actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
+<br>
 <br>
 http://www.healthdata.org/covid/data-downloads
 <br>
