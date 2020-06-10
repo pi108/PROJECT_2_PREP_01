@@ -20,22 +20,21 @@
 ## Data Extraction:
 This project is about a website visualtion exercise using COVID-19 data. 
 <br>
+<br>
 As per wikipedia.org:
 <br>
 https://en.wikipedia.org/wiki/Coronavirus_disease_2019
 <br>
 Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China, and has resulted in a global pandemic. 
 <br>
+<br>
 Our group undertook an exercise of analyzing COVID-19 data as it pertains to all the 50 states in the United States of America. 
 <br>
 We extracted data from the following sources for our analysis:
 <br>
-<br>
 https://www.kaggle.com/imdevskp/corona-virus-report
 <br>
-<br>
 This data source had data related to actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
-<br>
 <br>
 http://www.healthdata.org/covid/data-downloads
 <br>
