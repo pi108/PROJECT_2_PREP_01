@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 2</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://unpkg.com/gauge-chart@latest/dist/bundle.js"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>COVID-19 Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+        <p><a href="/api/v1.0">Available APIs</a></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+
+        <div class="well">
+          <h5>State:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)">
+            {% for state_id in state_ids %}
+              <option value="{{state_id}}">{{state_id}}</option>
+            {% endfor %}          
+          </select>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-info-circle f-left" ></i>  Summary  </h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <h4 class="text-center">Total Deaths by State</h4>
+        <div id="map"></div>
+      </div>
+
+      <div class="col-md-3">
+        <h4 class="text-center" >  State Ranking <br> [1-50, low-high]</h4>
+        <div id="guage-chart" class="guage-chart"></div>
+        <h4 class="text-center">  Total Cases and Deaths, Population <br><br></h4>
+        <div id="myPie"></div>
+      </div>
+
+      <hr>
+
+      <!-- BIG NUMBERS -->
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xl-3">
+                <div class="card bg-c-gray order-card">
+                    <div  class="card-block">
+                    
+                      <h6 class="m-b-20"></h6>
+                      <h2  class="text-center"><i class="fa fa-heartbeat f-left"></i><span>Total Cases</span><br><span id="numcases"> </span></h2>
+                      <p class="m-b-0"> <span id="pccases" class="f-center"> </span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-xl-3">
+                <div class="card bg-c-darkgray order-card">
+                    <div class="card-block">
+                        <h6 class="m-b-20"></h6>
+                        <h2 class="text-center"><i class="fa fa-ambulance f-left"></i><span>Total Deaths</span><br><span id="numdeaths"> </span></h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-xl-3">
+                <div class="card bg-c-blue order-card">
+                    <div class="card-block">
+                        <h6 class="m-b-20"></h6>
+                        <h2 class="text-center"><i class="fa fa-heart-o f-left"></i><span>Total Unaffected</span><br><span id="numun"> </span></h2>
+                        <p class="m-b-0"><span class="f-center"></span></p>
+                    </div>
+                </div>
+            </div>
+
+      <div class="row">
+              <div class="col-md-12"><div id="hr"></div><hr></div>
+      </div>
+
+      <!-- DEATHS -->
+
+      <div class="row">
+        <div class="col-md-12"><div id="bubble"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"><div id="bubble2"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"><div id="dailydeaths"></div></div>
+      </div>
+
+
+        </div>
+      </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/plots.js"></script>
+</body>
+
+</html>
