@@ -108,17 +108,10 @@ When a user selects a state from the dropdown box in the upper left hand corner,
 1.	The panel below the dropdown box. This panel shows for the selected satte, the total number of cases, teh total number of deaths, and the total population. 
 2.	The map to the right of the dropdown box. The map zooms in to the selected state. You can then use the mouse to zoome in further or zoom out. You can also mouse over the state and that will pop up a box showing the total number of deaths for that state. The state will have a color ranging from light gray to solid blue depending on the number of total deaths for that state. To the right of the map is a vertical bar which shows how the color scal changes from light gray to solid blue depending on the tototal number of deaths for the selected state.
 3.	The gauge chart to the upper right of the map. This chart is created using a special javascript library called "gauge-chart". Details of this library can be found at this link:
-<br>
-https://github.com/recogizer/gauge-chart/
-<br>
 This gauge chart shows a ranking for the state based on total number of deaths per million of population. It is a scale with a ranking of 1 to 50 where a rank of 1 means that the selected state had the lowest (best) ratio of total number of deaths per million of population, and a ranking of 50 means that the selected state had the highest (worst) ration of total number of deaths per million of population. 
-<br>
 4.	The pie chart to the lower right of the map. This chart shows the percentages of the total population broken down into 3 categories, total number of cases, total number of deaths, and the total number unaffected - the sum of teh 3 percentages will always summ to 100% of the population of the selected state. It is a way to visually depict the magnitude of the total number of cases and deaths compared to the magnitude of the portion of the population unaffected.
-<br>
 5.	The box to the left of the screen below the  panel summary which is below the dropdown box.
-<br>
 6.	The box in the middle of the screen below the map. 
-<br>
 7.	The box to the right of the screen below the pie chart.
 8.	Bar chart # 1 which is below the 3 boxes mentioned in points 5 to 7 below. 
 9.	Bar chart # 2 which is below Bar Chart # 1. 
