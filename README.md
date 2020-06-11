@@ -117,5 +117,19 @@ This gauge chart shows a ranking for the state based on the total number of deat
 
 
 # Conclusions:
+1.	The 5 states with the highest total number of deaths are as follows:
+*- New York: 30,374
+*- New Jersey: 12,176
+*- Massachusetts: 7,323
+*- Pennsylvania: 5,943
+*- Illinois: 5,903
+2.	The 5 states with the highest total number of deaths per million of population are as follows:
+*- New York: 1,562
+*- New Jersey: 1,362
+*- Connecticut: 1,143
+*- Massachusetts: 1,050
+*- South Dakota: 927
+
+
 
 
