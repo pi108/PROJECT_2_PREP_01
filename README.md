@@ -36,7 +36,7 @@ We extracted data from the following sources for our analysis:
 <br>
 https://www.kaggle.com/imdevskp/corona-virus-report
 <br>
-This data source had data related to actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
+This data source had data related to the actual number of new daily cases, new daily deaths, and total cumulative deaths for every county and state in the United States. 
 <br>
 <br>
 http://www.healthdata.org/covid/data-downloads
@@ -88,9 +88,7 @@ We then created a Javascript file called plots.js. This file contains all the lo
 <br>
 
 ## Push to AWS:
-We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". This environment then provided us a URL for our webpage.
-<br>
-This is the URL for our webpage.
+We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". This environment then provided us a URL for our webpage as follows:
 <br>
 http://20200610v1-env.eba-3ip3pqzu.us-east-2.elasticbeanstalk.com/
 <hr>
