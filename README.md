@@ -114,8 +114,11 @@ https://github.com/recogizer/gauge-chart/
 This gauge chart shows a ranking for the state based on total number of deaths per million of population. It is a scale with a ranking of 1 to 50 where a rank of 1 means that the selected state had the lowest (best) ratio of total number of deaths per million of population, and a ranking of 50 means that the selected state had the highest (worst) ration of total number of deaths per million of population. 
 <br>
 4.	The pie chart to the lower right of the map. This chart shows the percentages of the total population broken down into 3 categories, total number of cases, total number of deaths, and the total number unaffected - the sum of teh 3 percentages will always summ to 100% of the population of the selected state. It is a way to visually depict the magnitude of the total number of cases and deaths compared to the magnitude of the portion of the population unaffected.
+<br>
 5.	The box to the left of the screen below the  panel summary which is below the dropdown box.
+<br>
 6.	The box in the middle of the screen below the map. 
+<br>
 7.	The box to the right of the screen below the pie chart.
 8.	Bar chart # 1 which is below the 3 boxes mentioned in points 5 to 7 below. 
 9.	Bar chart # 2 which is below Bar Chart # 1. 
