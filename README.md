@@ -7,14 +7,14 @@
 <br>
 
 ### This repository contains the files regarding a Website Visualization exercise conducted by our group. This folder contains the following:
-1.	SQLite Database called "covidData.db".
+1.	SQLite Database called "covidData.db" which contains a table with 7,850 records and 17 columns.
 2.	Python file called "covidData.py" that contains user-created functions. 
-3.	Python file called "application.py" that cretaes api routes using the user-created functions.
+3.	Python file called "application.py" that creates Flask powered restful APIs by using the user-created functions.
 4.	Folder called "static" that contains 2 folders:
-    *	css - folder contains a file called "style.css" which is used to format the website.
-    *	js - this folder contains a javascript file called "plots.js" which is used to create the visualizations ont eh website. 
-5.	Folder called "templates" that contains a file called "index.html" which the file used to create the webpage. 
-6.	File called "requirements.txt" which contains the requirements for the application to run. 
+    *	css - folder contains a file called "style.css" which is used to format the webpage.
+    *	js - this folder contains a javascript file called "plots.js" which is used to dynamically update the multiple visualizations on the webpage when a user makes a selection. This file also contains a javascript library called "gauge-chart" that we researched and added. 
+5.	Folder called "templates" that contains a file called "index.html" which is used to create the webpage. The webpage has 10 views / visualizations (1 panel, 1 map, 1 gauge chart, 1 pie chart, 3 boxes, and 3 bar charts) that update dynamically when a user makes a selection.
+6.	File called "requirements.txt" which contains the requirements of the libraries / files that are needed for the application to run in AWS. 
 7.	A zip folder called "PROJECT_2_PREP_01.zip" which contains the above 6 files and folders, that was pushed to AWS. 
 8.	A folder called "images" thatr contains images of our Website.
 
