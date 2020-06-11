@@ -103,7 +103,7 @@ http://20200610v1-env.eba-3ip3pqzu.us-east-2.elasticbeanstalk.com/
 ![](images/Website_Bottom_Half.PNG)
 <hr>
 
-## Details of the webpage: 
+## User-driven interaction with the webpage: 
 When a user selects a state from the dropdown box in the upper left hand corner, the following items update automatically with the relevant details for that state as follows:
 1.	The panel below the dropdown box. This panel shows for the selected state, the total number of cases, the total number of deaths, and the total population. 
 2.	The map to the right of the dropdown box. The map zooms in to the selected state. You can then use the mouse to zoom in further or zoom out. You can also mouse over the state and that will pop up a box showing the total number of deaths for that state. The state will have a color ranging from light gray to solid blue depending on the number of total deaths for that state. To the right of the map is a vertical bar which shows how the color scale changes from light gray to solid blue depending on the total number of deaths for the selected state.
