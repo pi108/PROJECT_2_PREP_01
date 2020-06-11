@@ -16,10 +16,10 @@
 5.	Folder called "templates" that contains a file called "index.html" which is used to create the webpage. The webpage has 10 views / visualizations (1 panel, 1 map, 1 gauge chart, 1 pie chart, 3 boxes, and 3 bar charts) that update dynamically when a user makes a selection.
 6.	File called "requirements.txt" which contains the requirements of the libraries / files that are needed for the application to run in AWS. 
 7.	A zip folder called "PROJECT_2_PREP_01.zip" which contains the above 6 files and folders, that was pushed to AWS. 
-8.	A folder called "images" thatr contains images of our Website.
+8.	A folder called "images" that contains images of our Website.
 
 ## Data Extraction:
-This project is about a website visualtion exercise using COVID-19 data. 
+This project is about a website visualization exercise using COVID-19 data. 
 <br>
 <br>
 As per wikipedia.org:
@@ -63,7 +63,7 @@ This data source had data related to the state name abbreviations for every stat
 We did the following to transform the data:
 1.	Addressed NULL values. 
 2.	Formatted the dates in a manner that would work with the flask library in python. 
-3.	"Rolled-up" / summarized the dataset with actual numbers fromt he original level of State/County/Date to the level of State/Date.
+3.	"Rolled-up" / summarized the dataset with actual numbers from the original level of State/County/Date to the level of State/Date.
 4. Created a ranking for the states based on the Total Deaths Per Million of Population.
 
 ## Data Load: 
@@ -106,7 +106,7 @@ http://20200610v1-env.eba-3ip3pqzu.us-east-2.elasticbeanstalk.com/
 ## Details of the webpage: 
 When a user selects a state from the dropdown box in the upper left hand corner, the following items update automatically with the relevant details for that state as follows:
 1.	The panel below the dropdown box. This panel shows for the selected state, the total number of cases, teh total number of deaths, and the total population. 
-2.	The map to the right of the dropdown box. The map zooms in to the selected state. You can then use the mouse to zoome in further or zoom out. You can also mouse over the state and that will pop up a box showing the total number of deaths for that state. The state will have a color ranging from light gray to solid blue depending on the number of total deaths for that state. To the right of the map is a vertical bar which shows how the color scal changes from light gray to solid blue depending on the tototal number of deaths for the selected state.
+2.	The map to the right of the dropdown box. The map zooms in to the selected state. You can then use the mouse to zoom in further or zoom out. You can also mouse over the state and that will pop up a box showing the total number of deaths for that state. The state will have a color ranging from light gray to solid blue depending on the number of total deaths for that state. To the right of the map is a vertical bar which shows how the color scale changes from light gray to solid blue depending on the tototal number of deaths for the selected state.
 3.	The gauge chart to the upper right of the map. This chart is created using a special javascript library called "gauge-chart". Details of this library can be found at this link: https://github.com/recogizer/gauge-chart/. 
 This gauge chart shows a ranking for the state based on total number of deaths per million of population. It is a scale with a ranking of 1 to 50 where a rank of 1 means that the selected state had the lowest (best) ratio of total number of deaths per million of population, and a ranking of 50 means that the selected state had the highest (worst) ration of total number of deaths per million of population. 
 4.	The pie chart to the lower right of the map. This chart shows the percentages of the total population broken down into 3 categories, total number of cases, total number of deaths, and the total number unaffected - the sum of teh 3 percentages will always summ to 100% of the population of the selected state. It is a way to visually depict the magnitude of the total number of cases and deaths compared to the magnitude of the portion of the population unaffected.
