@@ -1,9 +1,9 @@
 # PROJECT # 2
 # Visualize me, Captain !!  
 ## Team Members
+* *Ann McNamara*
 * *Swati Saxena*
 * *Firdosh Patel*
-* *Ann McNamara*
 <br>
 
 ### This repository contains the files regarding a Website Visualization exercise conducted by our group. This folder contains the following:
