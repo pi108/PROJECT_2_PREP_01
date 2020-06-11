@@ -6,6 +6,7 @@
 * *Ann McNamara*
 <br>
 <br>
+
 ### This repository contains the files regarding a Website Visualization exercise conducted by our group. This folder contains the following:
 1.	SQLite Database called "covidData.db".
 2.	Python file called "covidData.py" that contains user-created functions. 
@@ -19,6 +20,7 @@
 8.	A folder called "images" thatr contains images of our Website.
 <br>
 <br>
+
 ## Data Extraction:
 This project is about a website visualtion exercise using COVID-19 data. 
 <br>
@@ -60,6 +62,7 @@ https://www.50states.com/abbreviations.htm
 This data source had data related to the state name abbreviations for every state in the United States. 
 <br>
 <br>
+
 ## Data Transformation:
 We did the following to transform the data:
 1.	Addressed NULL values. 
@@ -68,26 +71,32 @@ We did the following to transform the data:
 4. Created a ranking for the states based on the Total Deaths Per Million of Population.
 <br>
 <br>
+
 ## Data Load: 
 We then loaded the data into a SQLite database and called it covidData.db.
 <br>
 <br>
+
 ## Creation of a Python File with Functions:
 We used SQL Alchemy to create functions in a python file called covidData.py. These functions allow us to extract the relevant data from the SQLite Database.
 <br>
 <br>
+
 ## Creation of a Python File with API routes:
 We then used Flask to create API routes in a file called application.py. This file uses the functions created in the file called covidData.py. 
 <br>
 <br>
+
 ## Creation of an HTML file:
 We then created an HTML file called index.html. This file contains the structure for the webpage. It also has all the relevant references / links to the underlying files that are used to format / style the webpage, as well as dynamically create the charts / graphs on the webpage.
 <br>
 <br>
+
 ## Creation of a Javascript file:
 We then created a Javascript file called plots.js. This file contains all the logic that controls the dynamic interaction of a user with the webpage. This logic allows for dynamic updates to the charts / graphs based on the user's selection of a particular US state.
 <br>
 <br>
+
 ## Push to AWS:
 We then zipped all the relevant files and folders and uploaded them to an environment on AWS using the service called "Elastic Beanstalk". This environment then provided us a URL for our webpage.
 <br>
