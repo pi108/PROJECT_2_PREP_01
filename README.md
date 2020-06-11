@@ -110,12 +110,12 @@ When a user selects a state from the dropdown box in the upper left hand corner,
 3.	The gauge chart to the upper right of the map. This chart is created using a special javascript library called "gauge-chart". Details of this library can be found at this link: https://github.com/recogizer/gauge-chart/. 
 This gauge chart shows a ranking for the state based on total number of deaths per million of population. It is a scale with a ranking of 1 to 50 where a rank of 1 means that the selected state had the lowest (best) ratio of total number of deaths per million of population, and a ranking of 50 means that the selected state had the highest (worst) ration of total number of deaths per million of population. 
 4.	The pie chart to the lower right of the map. This chart shows the percentages of the total population broken down into 3 categories, total number of cases, total number of deaths, and the total number unaffected - the sum of teh 3 percentages will always summ to 100% of the population of the selected state. It is a way to visually depict the magnitude of the total number of cases and deaths compared to the magnitude of the portion of the population unaffected.
-5.	The box to the left of the screen below the  panel summary which is below the dropdown box. This box shows teh total number fo cases for the selected state. 
-6.	The box in the middle of the screen below the map. This box shows the total number of deaths for the selected state.
-7.	The box to the right of the screen below the pie chart. This box shows the total number of unaffected people for the selected state. This is calculated as the total population for the state less the sum of the total number of cases and the total number of deaths for that state.
-8.	Bar chart # 1 which is below the 3 boxes mentioned in points 5 to 7 below. 
-9.	Bar chart # 2 which is below Bar Chart # 1. 
-10.	Bar chart # 3 which is below Bar Chart # 2. 
+5.	The box to the left of the screen below the  panel summary which is below the dropdown box. This box shows the total number of cases for the selected state, and that number as a percentage of the total population. 
+6.	The box in the middle of the screen below the map. This box shows the total number of deaths for the selected state, and that number as a percentage of the total population.
+7.	The box to the right of the screen below the pie chart. This box shows the total number of unaffected people for the selected state, and that number as a percentage of the total population. The number of unaffected people is calculated as the total population for the state less the sum of the total number of cases and deaths for that state.
+8.	Bar chart # 1 which is below the 3 boxes mentioned in points 5 to 7 above. This bar chart shows the total number of deaths for the selected state by date. This chart also has a "slider" feature at the bottom of the chart, which allows you to conveninetly "slide" to a date window of your choice and zoom into that date window on the graph. At the top left hand corner of the chart, you also have 3 "time-horizon" buttons - 1W (for the last week from the selected date window), 3W (for the last 3 weeks from the selected date window, and All (for all the dates in the dataset). 
+9.	Bar chart # 2 which is below Bar Chart # 1. This bar chart shows the daily cases for the selected state by date. This bar chart also has the "slider" feature and the 3 "time-horizon" buttons mentioned in number 8. above.
+10.	Bar chart # 3 which is below Bar Chart # 2. This bar chart shows the daily detahs for the selected state by date. This bar chart also has the "slider" feature and the 3 "time-horizon" buttons mentioned in number 8. above.
 
 
 # Conclusions:
