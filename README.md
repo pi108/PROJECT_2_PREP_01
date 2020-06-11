@@ -42,6 +42,21 @@ http://www.healthdata.org/covid/data-downloads
 <br>
 This data source had data related to the predicted number of new daily cases, new daily deaths, and total cumulative deaths for every state in the United States. 
 <br>
+<br>
+https://worldpopulationreview.com/states/
+<br>
+This data source had data related to the population for every state in the United States. 
+<br>
+<br>
+https://www.latlong.net/category/states-236-14.html
+<br>
+This data source had data related to the latitude and longitude for every state in the United States. 
+<br>
+<br>
+https://www.50states.com/abbreviations.htm
+<br>
+This data source had data related to the state name abbreviations for every state in the United States. 
+<br>
 
 ## Data Transformation:
 We did the following to transform the data:
