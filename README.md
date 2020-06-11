@@ -17,7 +17,6 @@
 6.	File called "requirements.txt" which contains the requirements for the application to run. 
 7.	A zip folder called "PROJECT_2_PREP_01.zip" which contains the above 6 files and folders, that was pushed to AWS. 
 8.	A folder called "images" thatr contains images of our Website.
-<br>
 
 ## Data Extraction:
 This project is about a website visualtion exercise using COVID-19 data. 
@@ -66,7 +65,6 @@ We did the following to transform the data:
 2.	Formatted the dates in a manner that would work with the flask library in python. 
 3.	"Rolled-up" / summarized the dataset with actual numbers fromt he original level of State/County/Date to the level of State/Date.
 4. Created a ranking for the states based on the Total Deaths Per Million of Population.
-<br>
 
 ## Data Load: 
 We then loaded the data into a SQLite database and called it covidData.db.
