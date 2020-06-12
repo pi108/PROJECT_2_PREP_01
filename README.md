@@ -127,8 +127,15 @@ This gauge chart shows a ranking for the state based on the total number of deat
 * *New York: 1,562 (0.16% of the total population)*
 * *New Jersey: 1,362 (0.14% of the total population)*
 * *Connecticut: 1,143 (0.11% of the total population)*
-* *Massachusetts: 1,050*
-* *South Dakota: 927*
+* *Massachusetts: 1,050 (0.10% of the total population)*
+* *South Dakota: 927 (0.10% of the total population)*
+
+## Key Takeaways:
+We were surprised by the relatively low percentage of the total population that was affected (total cases and deaths). Even for the hardest hit state (New York) the total percentage affected was just over 2% of the total population. This could be due to "stay-at-home" orders and social distancing measures taken in early March. 
+<br>
+Even with Predicted data, there are many factors contributing to the spread of this virus. The novelty of this virus makes it difficult to make predictions. However, the multiple visualizations provided on our webpage allows the user to explore the data in a way that tells a more copmprehensive story. 
+
+
 
 
 
